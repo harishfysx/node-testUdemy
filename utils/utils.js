@@ -17,7 +17,7 @@ module.exports.setName= (user,fullName) =>{
 module.exports.asyncAdd = (a,b,callback) =>{
   setTimeout(() =>{
     callback(a+b);
-  },1500)
+  },100)
 }
 
 module.exports.asyncPromiseAdd = (a,b) =>{
@@ -25,7 +25,7 @@ module.exports.asyncPromiseAdd = (a,b) =>{
 		if(typeof a === 'number' && typeof b === 'number'){
       setTimeout(() =>{
        resolve(a+b);
-     },1500)
+     },100)
 
 		}else{
 			reject ('Unable to add the numbers given')
